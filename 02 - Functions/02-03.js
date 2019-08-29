@@ -4,7 +4,6 @@ Example string : 'dog'
 Expected Output : d,do,dog,o,og,g
 */
 "use strict";
-(function () {
     function wordMaker(word) {
         for (var i = 0; i < word.length; i++) {
             for (var j = i; j <= word.length; j++) {
@@ -12,5 +11,6 @@ Expected Output : d,do,dog,o,og,g
             }
         }
     }
-    return wordMaker;
-})()("mile");
+
+
+    wordMaker("mile");

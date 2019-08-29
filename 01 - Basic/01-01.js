@@ -8,8 +8,7 @@ Current time is : 4 PM : 50 : 22
 
 function getCurrentDay() {
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var current = new Date();
-    console.log("Today is " + days[current.getDay()] + ".");
+    console.log("Today is " + days[new Date().getDay()] + ".");
 }
 
 getCurrentDay();

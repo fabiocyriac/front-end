@@ -4,14 +4,20 @@ Example x = 32243;
 Expected Output : 34223
 */
 "use strict";
-(function (pickedNumber) {
-    pickedNumber = pickedNumber.toString();
+function reverseNumber(pickedNumber) {
+
     var newNumber = "";
-    var x = 0;
-    while (x < pickedNumber.length) {
-        newNumber = newNumber + pickedNumber.slice(pickedNumber.length - 1 - x, pickedNumber.length - x);
-        x++;
+    var readyNumber = pickedNumber;
+    console.log(readyNumber.toString().split("").reverse().join(""));
+
+    pickedNumber = pickedNumber.toString();
+    console.log(pickedNumber)
+    for(var i=0; i < pickedNumber.length; i++){
+        newNumber = newNumber + pickedNumber.slice(pickedNumber.length-i-1, pickedNumber.length-i)
     }
+   
     console.log(newNumber);
 
-})(32243);
+}
+
+reverseNumber(32243);
