@@ -5,7 +5,6 @@ Example string : 'The quick brown fox'
 Expected Output : 5
 */
 "use strict";
-(function () {
     function countVowels(pickedSentence) {
         console.log(pickedSentence);
         var countedVowels = 0;
@@ -18,5 +17,5 @@ Expected Output : 5
         }
         console.log("There are " + countedVowels + " vowels.")
     }
-    return countVowels;
-})()("The quick brown fox");
+    
+    countVowels("The quick brown fox");

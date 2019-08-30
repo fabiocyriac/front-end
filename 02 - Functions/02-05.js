@@ -4,9 +4,8 @@ Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox '
 */
 "use strict";
-(function () {
-    function capitalise(pickedSentence) {
-        var words = pickedSentence.split(" ");
+    function capitalise(input) {
+        var words = input.split(" ");
         for (var i = 0; i < words.length; i++) {
             words[i] = words[i].split("");
             words[i][0] = words[i][0].toUpperCase();
@@ -14,5 +13,5 @@ Expected Output : 'The Quick Brown Fox '
         }
         console.log(words.join(" "));
     }
-    return capitalise;
-})()("maja sa nedom ode na sajam");
+
+    capitalise("maja sa nedom ode na sajam");

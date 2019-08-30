@@ -20,4 +20,5 @@ Output :
     console.log(gcdTwoNumbers(12, 13));
     console.log(gcdTwoNumbers(9, 3));
     console.log(gcdTwoNumbers(8, 12));
+
 })();

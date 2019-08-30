@@ -5,9 +5,8 @@ Expected Output : 'Development'
 */
 
 "use strict";
-(function () {
-    function longestWord(pickedSentence) {
-        var words = pickedSentence.split(" ");
+    function longestWord(sentance) {
+        var words = sentance.split(" ");
         var longest = words[0];
         for (var i = 1; i < words.length; i++) {
             if (words[i].length > longest.length) {
@@ -16,5 +15,4 @@ Expected Output : 'Development'
         }
         console.log(longest);
     }
-    return longestWord;
-})()("Our patience will achieve more than our force.");
+    longestWord("Our patience will achieve more than our force.");
